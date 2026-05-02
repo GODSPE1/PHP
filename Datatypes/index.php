@@ -16,19 +16,79 @@ echo"($x)<br><br>";
 
 $str = "This is PHP";
 echo $str[0];
-echo strlen($str);
+echo strlen($str). '<br><br>';
+
+
+$num1 = 12;
+echo $num1;
+var_dump($num1);
 
 ?>
-<!-- <h1>Hello</h1> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- <h1><?=  'One ';?></h1> -->
-</body>
-</html>
 
+<?php
+$float1 = 12.4;
+$newfloat1 = 0;
+echo $float1;
+var_dump($float1);
+var_dump((int)$float1);
+?>
+
+
+<?php
+$float2 = 12.9;
+echo $float2;
+var_dump($float2);
+var_dump((int)$float2);
+?>
+
+<?php
+
+$amount =  (int)'This 100 USD';
+echo $amount; // 0
+?>
+
+
+<?php
+
+$amount =  (int)'100 USD';
+echo $amount; // 100
+?>
+
+<?php
+
+$amount =  (int)strlen('This is 100 USD');
+echo $amount; // 15
+?>
+
+<?php
+
+$numbers = [1,2,3];
+// $str = (string)$numbers;
+
+echo $str; // Array
+?>
+<?php
+
+$amount = 100;
+var_dump($amount);
+$x = $amount . " USD"; // 100 USD
+var_dump($x);
+?>
+
+<?php
+$qty = '20';
+if($qty == (int)'20') {
+    echo 'Equal'; //type juggling
+} else {
+    echo 'False';
+}
+?>
+
+<?php
+$qty = 20;
+if((string)$qty === 20) {
+    echo 'Equal'; //type juggling
+    } else {
+        echo 'False';
+}
+?>

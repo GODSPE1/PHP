@@ -33,15 +33,15 @@ for ($i = 1; $i <= 10; $i++) {
     
     // for loop in array
 $number = ['one', 'two', 'three', 'four', 'five'];
-for($x = 0; $x <= count($number); $x++) {
-    echo $number[$x];
+for($x = 0; $x < count($number); $x++) {
+    echo $number[$x] .'<br>';
 }
 
 // while loop
 $total = 0;
 $i = 0;
 
-while($i <= NUM) {
+while($i < NUM) {
     $total += NUM;
     $i++;
 }
@@ -70,4 +70,17 @@ foreach($posts as $post) {
 foreach($posts as $index => $post) {
     echo $index + 1 . ' - ' . $post . '<br>';
 }
+
+$colour = [
+    "blue" => '#00f',
+    "white" => '#fff',
+    "green" => '#0f0',
+    "yellow" => '#ff0',
+    "red" => '#f00'
+];
+
+
+foreach($colour as $key => $value) {
+    echo "$key => $value" . '  <br>';
+    }  
 ?>
