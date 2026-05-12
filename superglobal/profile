@@ -1,0 +1,151 @@
+TASK
+
+Create a PHP script named:
+
+profile.php
+
+The script must:
+
+Accept user data through URL query parameters using:
+$_GET
+Read:
+name
+age
+country
+
+from the URL.
+
+REQUIRED URL FORMAT
+
+Your script must work like this:
+
+http://localhost/profile.php?name=John&age=25&country=Nigeria
+EXPECTED OUTPUT (STRICT)
+User Profile
+------------
+Name: John
+Age: 25
+Country: Nigeria
+Adult: true
+REQUIREMENTS
+
+You MUST:
+
+Use:
+$_GET
+at least ONE $GLOBALS
+Determine:
+If age >= 18 → Adult: true
+Else → Adult: false
+Use:
+ONE echo statement
+Concatenation only (.)
+CONSTRAINTS
+❌ No hardcoded values
+❌ No multiple echo
+❌ No HTML
+❌ No interpolation
+❌ No readline()
+✅ Must work through browser URL
+✅ Must use superglobals properly
+⚠️ HIDDEN DIFFICULTIES
+$_GET values are strings
+Missing query parameters can break your script
+$GLOBALS usage must be meaningful, not fake
+
+
+
+6. Short Coding Task
+
+Create code that:
+
+Reads score from URL
+Outputs:
+Pass
+
+if score >= 50, otherwise:
+
+Fail
+
+Constraints:
+
+Use $_GET
+One echo
+Concatenation only
+
+
+Problem 1 — REQUEST HANDLING
+
+Build a script that accepts:
+
+?product=Laptop&price=500
+
+Output:
+
+Product: Laptop
+Price: 500
+
+Constraints:
+
+Safe defaults required
+One echo
+Problem 2 — TYPE SAFETY
+
+Accept:
+
+?quantity=3
+
+Output:
+
+Total: 300
+
+Rules:
+
+Unit price = 100
+Must validate quantity as integer
+No hardcoded total
+Problem 3 — THINKING
+
+What happens if:
+
+$age = "hello";
+echo $age + 5;
+
+Explain:
+
+output it will output warning shwin type error
+warning/error behavior the behaviour is adding a string with an integer whoch gives errorwhy it happens
+🏗️ PROJECT — MINI LOGIN GATE
+TASK
+
+Build:
+
+login.php
+
+The script accepts:
+
+?username=admin&password=1234
+RULES
+
+If:
+
+username = admin
+password = 1234
+
+Output:
+
+Access granted
+
+Else:
+
+Access denied
+REQUIREMENTS
+Use $_GET
+Use safe defaults
+Use ONE echo
+Use concatenation only
+No hardcoding final result directly
+No HTML
+⚠️ HIDDEN TEST
+
+Missing parameters must NOT crash script.
