@@ -1,4 +1,6 @@
 <?php
+// include 'copyright.php'; 
+
 $name = "John"; $age = 25; $country = "Nigeria";
  echo "My name is $name\nI am $age years old\nI live in $country";
 ?>
@@ -158,10 +160,13 @@ echo "Hello " . $name . 5;
 
 
 <?php
+include 'copyright.php'; 
 $header = "Receipt";
 $line = "-------";
 $item = "Phone";
 $price = 300;
 $quantity = 2;
 echo $header. "\n". $line. "\nItem: " .$item. "\nPrice: ". $price. "\nQuantity: ". $quantity. "\nTotal: ". ($price * $quantity);
+
+echo get_copyright();
 ?>
