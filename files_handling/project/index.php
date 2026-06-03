@@ -15,7 +15,28 @@ include 'partials/footer.php';
 // dd($data);
 
 // $file = 'udddd.txt';
-
+John
+Hope
+Stephen
+Lambert
+John
+Hope
+Stephen
+Lambert
+John
+Hope
+Stephen
+Lambert
+John
+Hope
+Stephen
+Lambert
+John
+Hope
+Stephen
+Lambert
+John
+Hope
 // if ($file === false) {
 //     die('Unable to open file.');
 // }
